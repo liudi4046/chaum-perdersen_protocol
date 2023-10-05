@@ -8,8 +8,11 @@
 //when prover wants to login , he sends r1 = alpha ^ k and r2 = beta ^ k to verifier
 //verifier store r1 and r2, and sends a random number c to prover
 //prover calculates s = c - k * x (mod q)
+use num_bigint::BigInt;
 
 struct ZKP {
-    alpha,beta,p,q
-    
+    alpha: BigInt,
+    beta: BigInt,
+    p: BigInt,
+    q: BigInt,
 }
