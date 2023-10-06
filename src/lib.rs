@@ -9,7 +9,7 @@
 //verifier store r1 and r2, and sends a random number c to prover
 //prover calculates s = c - k * x (mod q)
 use num_bigint::BigInt;
-
+//
 struct ZKP {
     alpha: BigInt,
     beta: BigInt,
